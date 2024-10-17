@@ -1,0 +1,159 @@
+/* Use League Spartan font from Google Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    background-color: #e0e0e0; /* Light gray (abu-abu) background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    place-items: center; /* Centers content both horizontally and vertically */
+    min-height: 100vh; /* Full viewport height */
+    flex-direction: column;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    background-color: #e0e0e0; /* Light gray (abu-abu) background */
+    color: #333;
+    margin: 0;
+    min-height: 100vh; /* Minimum height of 100% viewport, allows content to grow */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Ensure the navbar and profile sections are stacked vertically */
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.7); /* White with transparency */
+    color: #333;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(128, 128, 128, 0.3); /* Grey shadow */
+    width: 100vw; /* Make the header full width */
+    position: relative; /* Position to avoid interfering with other elements */
+}
+
+.navbar {
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Full width navbar */
+    #box-shadow: 0px 4px 8px rgba(128, 128, 128, 0.3); /* Add shadow to navbar */
+    #background-color: rgba(255, 255, 255, 0.7); /* White transparent background */
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #333; /* Darker text for contrast on white background */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar li a:hover {
+    color: #000; /* Change hover color to black for visibility */
+}
+
+.profile-section {
+    margin-top: 80px;
+    background-color: #fff;
+    padding: 51px 10px;
+    border-radius: 20px;
+    box-shadow: 90px 90px 90px rgba(128, 128, 128, 0.3);
+    width: 421px; /* Make space for text and image */
+    margin-left: 110px;
+    place-items: center; /* Centers content both horizontally and vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Full-width for the logo */
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 32px;
+    height: 32px;
+}
+
+.profile-pic {
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0px solid #ddd;
+}
+
+.profile-info {
+    margin-left: auto; /* Pushes the text to the right */
+    text-align: right; /* Right-align the text */
+    margin-right: 10px; /* Space between text and the right side of the container */
+}
+
+.profile-info h1 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.profile-info h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    font-size: 18px;
+    color: #777;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end; /* Align social links to the right */
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: auto; /* Ensure footer stays at the bottom */
+    padding: 20px;
+    text-align: center;
+    background-color: #8c00ef;
+    color: #ffffff;
+}
+
+/* Adjustments for larger screens */
+@media screen and (min-width: 768px) {
+    .profile-section {
+        margin-left: 100px; /* More margin for larger screens */
+    }
+
+
